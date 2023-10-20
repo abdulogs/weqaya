@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Dashboard</title>
+    <link rel="shortcut icon" href="./src/images/favicon.ico" type="image/x-icon">
+    <!-- Common css -->
+    <link rel="stylesheet" href="./src/libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/libs/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="./src/css/stylesheet.css">
+    <link rel="stylesheet" href="./src/css/utilities.css">
+</head>
+
+<body class="d-flex flex-column h-100 bg-light fontn-1 overflow-auto layout">
+
+    <header class="navbar navbar-expand fixed-top bg-white shadow-sm p-0" w3-include-html="components/navbar.html">
+    </header>
+
+    <div class="container container-sm container-md container-lg container-xl container-xxl d-flex py-5">
+        <aside class="sidebar" id="sidebar" w3-include-html="components/sidebar.html"></aside>
+
+        <main class="h-100 w-100 my-4 container-fluid">
+            <nav class="py-3 mb-2">
+                <h2 class="font-20 fw-bold">Dashboard</h2>
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item">
+                        <a href="" class="text-decoration-none text-dark">Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="" class="text-decoration-none text-muted fw-bold">Dashboard</a>
+                    </li>
+                </ol>
+            </nav>
+            <!-- Breadcrumb -->
+            <section class="row justify-content-center">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                    <form class="card bg-white shadow rounded-4 border-0 mb-4">
+                        <div class="card-header bg-transparent border-0 py-3">
+                            <h3 class="card-title font-18 fw-bold m-0 d-flex align-items-center">
+                                <span class="bg-light rounded-circle font-20 me-2 bx bx-female text-primary p-2"></span>
+                                Mother details
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="mother_national_id" class="fw-bold text-secondary">Mother National
+                                            ID</label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="mother_national_id">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="mother_mrn_number" class="fw-bold text-secondary">Mother MRN
+                                            Number</label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="mother_mrn_number">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="form-group">
+                                        <label for="firstname" class="fw-bold text-secondary">First name</label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="firstname">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="form-group">
+                                        <label for="lastname" class="fw-bold text-secondary">Last name</label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="lastname">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="form-group">
+                                        <label for="telephone_number" class="fw-bold text-secondary">
+                                            Telephone number
+                                        </label>
+                                        <input type="tel"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="telephone_number">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form class="card bg-white shadow rounded-4 border-0 mb-4">
+                        <div class="card-header bg-transparent border-0 py-3">
+                            <h3 class="card-title font-18 fw-bold m-0 d-flex align-items-center">
+                                <span class="bg-light rounded-circle font-20 me-2 bx bx-child text-primary p-2"></span>
+                                Baby details
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-4 mb-3">
+                                    <div class="form-group">
+                                        <label for="mother_mrn_number" class="fw-bold text-secondary">Mother MRN
+                                            Number</label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="mother_mrn_number">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="form-group">
+                                        <label for="firstname" class="fw-bold text-secondary">First name</label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="firstname">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="form-group">
+                                        <label for="lastname" class="fw-bold text-secondary">Last name</label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="lastname">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="birth_date" class="fw-bold text-secondary">Birth date</label>
+                                        <input type="date"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="birth_date">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="birth_hour" class="fw-bold text-secondary">Birth hour</label>
+                                        <input type="time"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="birth_hour">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="gender" class="fw-bold text-secondary">Gender</label>
+                                        <select
+                                            class="form-select form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="gender">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="birth_weight" class="fw-bold text-secondary">Birth weight</label>
+                                        <input type="number"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="birth_weight">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="genstation" class="fw-bold text-secondary">Genstation</label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="genstation">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="nationality" class="fw-bold text-secondary">Nationality</label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="nationality">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form class="card bg-white shadow rounded-4 border-0 mb-4">
+                        <div class="card-header bg-transparent border-0 py-3">
+                            <h3 class="card-title font-18 fw-bold m-0 d-flex align-items-center">
+                                <span
+                                    class="bg-light rounded-circle font-20 me-2 bx bx-info-circle text-primary p-2"></span>
+                                Request info
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-4 mb-3">
+                                    <div class="form-group">
+                                        <label for="collection_date" class="fw-bold text-secondary">
+                                            Collection date
+                                        </label>
+                                        <input type="date"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="collection_date">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="form-group">
+                                        <label for="collection_time" class="fw-bold text-secondary">
+                                            Collection time
+                                        </label>
+                                        <input type="time"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="collection_time">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="form-group">
+                                        <label for="feeding_type" class="fw-bold text-secondary">
+                                            Feeding type
+                                        </label>
+                                        <select
+                                            class="form-select form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="feeding_type">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <label for="blood_transfusion" class="fw-bold text-secondary">
+                                        Blood transfusion
+                                    </label>
+                                    <div class="form-group">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="blood_transfusion"
+                                                value="1">
+                                            <label class="form-check-label" for="blood_transfusion">Yes</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="blood_transfusion"
+                                                value="0">
+                                            <label class="form-check-label" for="blood_transfusion">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <label for="repeated" class="fw-bold text-secondary">Repeated</label>
+                                    <div class="form-group">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="repeated" value="1">
+                                            <label class="form-check-label" for="repeated">Yes</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="repeated" value="0">
+                                            <label class="form-check-label" for="repeated">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <label for="premature" class="fw-bold text-secondary">Premature</label>
+                                    <div class="form-group">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="premature" value="1">
+                                            <label class="form-check-label" for="premature">Yes</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="premature" value="0">
+                                            <label class="form-check-label" for="premature">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <label for="sick" class="fw-bold text-secondary">Sick</label>
+                                    <div class="form-group">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="sick" value="1">
+                                            <label class="form-check-label" for="sick">Yes</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="sick" value="0">
+                                            <label class="form-check-label" for="sick">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form class="card bg-white shadow rounded-4 border-0 mb-4">
+                        <div class="card-header bg-transparent border-0 py-3">
+                            <h3 class="card-title font-18 fw-bold m-0 d-flex align-items-center">
+                                <span
+                                    class="bg-light rounded-circle font-20 me-2 bx bx-info-circle text-primary p-2"></span>
+                                Addtional information
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="request_id" class="fw-bold text-secondary">Request ID</label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="request_id">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="priority" class="fw-bold text-secondary">Priority</label>
+                                        <select
+                                            class="form-select form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="priority">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="diagnosis" class="fw-bold text-secondary">Diagnosis</label>
+                                        <textarea class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="diagnosis"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="antibiotics" class="fw-bold text-secondary">Antibiotics</label>
+                                        <textarea class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="antibiotics"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="alarms" class="fw-bold text-secondary">Alarms</label>
+                                        <textarea class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="alarms"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="info" class="fw-bold text-secondary">Info</label>
+                                        <textarea class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="info"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="anamnesis" class="fw-bold text-secondary">Anamnesis</label>
+                                        <textarea class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="anamnesis"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="comment" class="fw-bold text-secondary">Comment</label>
+                                        <textarea type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="comment"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 mb-3">
+                                    <div class="form-group">
+                                        <label for="attachments" class="fw-bold text-secondary">Attachments</label>
+                                        <input type="file"
+                                            class="form-control shadow-none p-2 border-0 font-14 bg-light"
+                                            id="attachments">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <hr>
+                    <form class="card bg-white shadow rounded-4 border-0 mb-4">
+                        <div class="card-header bg-transparent border-0 py-3">
+                            <h3 class="card-title font-18 fw-bold m-0 d-flex align-items-center">
+                                <span
+                                    class="bg-light rounded-circle font-20 me-2 bx bx-info-circle text-primary p-2"></span>
+                                AFP
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="no_ovp_dose" class="fw-bold text-secondary">No of OVP dose</label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="no_ovp_dose">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="date_ovp_dose" class="fw-bold text-secondary">Date of last OVP
+                                            dose</label>
+                                        <input type="date"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="date_ovp_dose">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="date_of_paralysis" class="fw-bold text-secondary">Date of
+                                            paralysis</label>
+                                        <input type="date"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="date_of_paralysis">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="date_of_symptoms" class="fw-bold text-secondary">Date of symptoms
+                                            and signs</label>
+                                        <input type="date"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="date_of_symptoms">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="sample_collected_from_patients" class="fw-bold text-secondary">
+                                            Sample collected from patients
+                                        </label>
+                                        <input type="date"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="sample_collected_from_patients">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="date_of_first_sample" class="fw-bold text-secondary">Date of first
+                                            sample</label>
+                                        <input type="date"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="date_of_first_sample">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="date_of_second_samples" class="fw-bold text-secondary">
+                                            Date of second samples
+                                        </label>
+                                        <input type="date"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="date_of_second_samples">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="date_of_sending_stools_samples" class="fw-bold text-secondary">
+                                            Date of sending stools samples
+                                        </label>
+                                        <input type="date"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="date_of_sending_stools_samples">
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 mb-3">
+                                    <div class="form-group">
+                                        <label for="coordinator_name" class="fw-bold text-secondary">Coordinator
+                                            name</label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="coordinator_name">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <hr>
+                    <form class="card bg-white shadow rounded-4 border-0 mb-4">
+                        <div class="card-header bg-transparent border-0 py-3">
+                            <h3 class="card-title font-18 fw-bold m-0 d-flex align-items-center">
+                                <span
+                                    class="bg-light rounded-circle font-20 me-2 bx bx-info-circle text-primary p-2"></span>
+                                Mumps
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="no_mmr_dose" class="fw-bold text-secondary">No of MMR dose</label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="no_mmr_dose">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="date_mmr_dose" class="fw-bold text-secondary">Date of last MMR
+                                            dose</label>
+                                        <input type="date"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="date_mmr_dose">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 mb-3">
+                                    <div class="form-group">
+                                        <label for="parotide_or_salivary" class="fw-bold text-secondary">
+                                            Parotide or other Salivary Glands Swelling
+                                        </label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="parotide_or_salivary">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="date_of_onset" class="fw-bold text-secondary">Date of Onset</label>
+                                        <input type="date"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="date_of_onset">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <label for="was_a_fever" class="fw-bold text-secondary">There was a fever?</label>
+                                    <div class="form-group">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="was_a_fever" value="1">
+                                            <label class="form-check-label" for="was_a_fever">Yes</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="was_a_fever" value="0">
+                                            <label class="form-check-label" for="was_a_fever">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 mb-3">
+                                    <div class="form-group">
+                                        <label for="provisional_clinic_diagnosis" class="fw-bold text-secondary">
+                                            Provisional clinic diagnosis
+                                        </label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="provisional_clinic_diagnosis">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="blood_sent_to_lab" class="fw-bold text-secondary">Date of blood
+                                            specimen sent to
+                                            lab</label>
+                                        <input type="date"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="blood_sent_to_lab">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="blood_taken_from_lab" class="fw-bold text-secondary">Date of blood
+                                            specimen
+                                            taken</label>
+                                        <input type="date"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="blood_taken_from_lab">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <hr>
+                    <form class="card bg-white shadow rounded-4 border-0 mb-4">
+                        <div class="card-header bg-transparent border-0 py-3">
+                            <h3 class="card-title font-18 fw-bold m-0 d-flex align-items-center">
+                                <span
+                                    class="bg-light rounded-circle font-20 me-2 bx bx-info-circle text-primary p-2"></span>
+                                Pertussis
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="no_of_dtp_dose" class="fw-bold text-secondary">
+                                            No of DTP dose
+                                        </label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="no_of_dtp_dose">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="date_of_last_dtp_dose" class="fw-bold text-secondary">
+                                            Date of last DTP Dose
+                                        </label>
+                                        <input type="date"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="date_of_last_dtp_dose">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="date_of_symptoms" class="fw-bold text-secondary">
+                                            Date of symptoms
+                                        </label>
+                                        <input type="date"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="date_of_symptoms">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="date_of_isolation" class="fw-bold text-secondary">
+                                            Date of isolation
+                                        </label>
+                                        <input type="date"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="date_of_isolation">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="date_of_sample_collection" class="fw-bold text-secondary">
+                                            Date of sample collection
+                                        </label>
+                                        <input type="date"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="date_of_sample_collection">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="date_of_collecting_samples" class="fw-bold text-secondary">
+                                            Date of collecting samples
+                                        </label>
+                                        <input type="date"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="date_of_collecting_samples">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <hr>
+                    <form class="card bg-white shadow rounded-4 border-0 mb-4">
+                        <div class="card-header bg-transparent border-0 py-3">
+                            <h3 class="card-title font-18 fw-bold m-0 d-flex align-items-center">
+                                <span
+                                    class="bg-light rounded-circle font-20 me-2 bx bx-info-circle text-primary p-2"></span>
+                                Measles / Robella
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="no_mmr_dose" class="fw-bold text-secondary">
+                                            No of MMR dose
+                                        </label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="no_mmr_dose">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="date_mmr_dose" class="fw-bold text-secondary">
+                                            Date of MMR dose
+                                        </label>
+                                        <input type="date"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="date_mmr_dose">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="type_of_rash" class="fw-bold text-secondary">
+                                            Type of rash
+                                        </label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="type_of_rash">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="date_of_rash_onset" class="fw-bold text-secondary">
+                                            Date of Rash Onset
+                                        </label>
+                                        <input type="date"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="date_of_rash_onset">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <label for="was_a_fever" class="fw-bold text-secondary">There was a fever?</label>
+                                    <div class="form-group">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="was_a_fever" value="1">
+                                            <label class="form-check-label" for="was_a_fever">Yes</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="was_a_fever" value="0">
+                                            <label class="form-check-label" for="was_a_fever">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="date_of_fever_onset" class="fw-bold text-secondary">
+                                            Date of fever Onset
+                                        </label>
+                                        <input type="date"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="date_of_fever_onset">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 mb-3">
+                                    <div class="form-group">
+                                        <label for="provisional_clinic_diagnosis" class="fw-bold text-secondary">
+                                            Provisional clinic diagnosis
+                                        </label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="provisional_clinic_diagnosis">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="blood_sent_to_lab" class="fw-bold text-secondary">
+                                            Date of blood specimen sent to lab
+                                        </label>
+                                        <input type="date"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="blood_sent_to_lab">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="blood_taken_from_lab" class="fw-bold text-secondary">
+                                            Date of blood specimen taken
+                                        </label>
+                                        <input type="date"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="blood_taken_from_lab">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="specimen_for_viral_culture" class="fw-bold text-secondary">
+                                            Specimen for viral culture
+                                        </label>
+                                        <select
+                                            class="form-select form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="specimen_for_viral_culture">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="viral_culture_taken_from_lab" class="fw-bold text-secondary">
+                                            Date of viral culture specimen taken
+                                        </label>
+                                        <input type="date"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="viral_culture_taken_from_lab">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 mb-3">
+                                    <div class="form-group">
+                                        <label for="viral_culture_sent_to_lab" class="fw-bold text-secondary">
+                                            Date of viral culture specimen sent to lab
+                                        </label>
+                                        <input type="date"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="viral_culture_sent_to_lab">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <hr>
+                    <form class="card bg-white shadow rounded-4 border-0 mb-4">
+                        <div class="card-header bg-transparent border-0 py-3">
+                            <h3 class="card-title font-18 fw-bold m-0 d-flex align-items-center">
+                                <span
+                                    class="bg-light rounded-circle font-20 me-2 bx bx-info-circle text-primary p-2"></span>
+                                Monkeypox
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-4 mb-3">
+                                    <div class="form-group">
+                                        <label for="vaccination_status" class="fw-bold text-secondary">
+                                            Vaccination status
+                                        </label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="vaccination_status">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="form-group">
+                                        <label for="date_of_vaccintion" class="fw-bold text-secondary">
+                                            Date of vaccintion
+                                        </label>
+                                        <input type="date"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="date_of_vaccintion">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="form-group">
+                                        <label for="date_of_symptoms" class="fw-bold text-secondary">
+                                            Date of symptoms
+                                        </label>
+                                        <input type="date"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="date_of_symptoms">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="symptoms" class="fw-bold text-secondary">
+                                            Symptoms
+                                        </label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="symptoms">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="travel_history" class="fw-bold text-secondary">
+                                            Travel history
+                                        </label>
+                                        <input type="date"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="travel_history">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 mb-3">
+                                    <div class="form-group">
+                                        <label for="sample_collected_from_patients" class="fw-bold text-secondary">
+                                            Types of sample collected from patients
+                                        </label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="sample_collected_from_patients">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="date_of_collecting_samples" class="fw-bold text-secondary">
+                                            Date of collecting samples
+                                        </label>
+                                        <input type="date"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="date_of_collecting_samples">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="date_of_sending_samples" class="fw-bold text-secondary">
+                                            Date of sending samples
+                                        </label>
+                                        <input type="date"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="date_of_sending_samples">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="name_of_physician" class="fw-bold text-secondary">
+                                            Name of physician
+                                        </label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="name_of_physician">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="phone_no" class="fw-bold text-secondary">
+                                            Phone no
+                                        </label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="phone_no">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <hr>
+                    <form class="card bg-white shadow rounded-4 border-0 mb-4">
+                        <div class="card-header bg-transparent border-0 py-3">
+                            <h3 class="card-title font-18 fw-bold m-0 d-flex align-items-center">
+                                <span
+                                    class="bg-light rounded-circle font-20 me-2 bx bx-info-circle text-primary p-2"></span>
+                                Selected test
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="test_name" class="fw-bold text-secondary">
+                                            Test Name
+                                        </label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="test_name">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="test_id" class="fw-bold text-secondary">
+                                            Test ID
+                                        </label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="test_id">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 mb-3">
+                                    <div class="form-group">
+                                        <label for="test_desc" class="fw-bold text-secondary">
+                                            Test description
+                                        </label>
+                                        <textarea class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="test_desc"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="test_price" class="fw-bold text-secondary">
+                                            Test price
+                                        </label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="test_price">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="test_vat_tax" class="fw-bold text-secondary">
+                                            VAT Tax
+                                        </label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="test_vat_tax">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <hr>
+                    <form class="card bg-white shadow rounded-4 border-0 mb-4">
+                        <div class="card-header bg-transparent border-0 py-3">
+                            <h3 class="card-title font-18 fw-bold m-0 d-flex align-items-center">
+                                <span
+                                    class="bg-light rounded-circle font-20 me-2 bx bx-info-circle text-primary p-2"></span>
+                                Test requested
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox"
+                                    value="New born screening test, Dried Blood spot (DBS)" id="dbs">
+                                <label class="form-check-label" for="dbs">
+                                    New born screening test, Dried Blood spot (DBS)
+                                </label>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox"
+                                    value="Uraniary organic acid, qualitative" id="uoa">
+                                <label class="form-check-label" for="uoa">
+                                    Uraniary organic acid, qualitative
+                                </label>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="Plasma amino acid, qualitative"
+                                    id="pao">
+                                <label class="form-check-label" for="dbs">
+                                    Plasma amino acid, qualitative
+                                </label>
+                            </div>
+
+                        </div>
+                    </form>
+                    <hr>
+                    <div class="card bg-white shadow rounded-4 border-0 mb-4">
+                        <div class="card-header bg-transparent border-0 py-3">
+                            <h3 class="card-title font-18 fw-bold m-0 d-flex align-items-center">
+                                <span
+                                    class="bg-light rounded-circle font-20 me-2 bx bx-info-circle text-primary p-2"></span>
+                                Selected test
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Desc</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <hr>
+                    <form class="card bg-white shadow rounded-4 border-0 mb-4">
+                        <div class="card-header bg-transparent border-0 py-3">
+                            <h3 class="card-title font-18 fw-bold m-0 d-flex align-items-center">
+                                <span class="bg-light rounded-circle font-20 me-2 bx bx-child text-primary p-2"></span>
+                                Patient details
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="patient_mrn_number" class="fw-bold text-secondary">
+                                            Patient MRN Number
+                                        </label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="patient_mrn_number">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="patient_name" class="fw-bold text-secondary">Patient name</label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="patient_name">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="birth_date" class="fw-bold text-secondary">Birth date</label>
+                                        <input type="date"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="birth_date">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="gender" class="fw-bold text-secondary">Gender</label>
+                                        <select
+                                            class="form-select form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="gender">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="phone_no" class="fw-bold text-secondary">Phone no</label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="phone_no">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="city" class="fw-bold text-secondary">City</label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="city">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 mb-3">
+                                    <div class="form-group">
+                                        <label for="address" class="fw-bold text-secondary">Address</label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="address">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 mb-3">
+                                    <div class="form-group">
+                                        <label for="patient_info" class="fw-bold text-secondary">Patient info</label>
+                                        <input type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="patient_info">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form class="card bg-white shadow rounded-4 border-0 mb-4">
+                        <div class="card-header bg-transparent border-0 py-3">
+                            <h3 class="card-title font-18 fw-bold m-0 d-flex align-items-center">
+                                <span
+                                    class="bg-light rounded-circle font-20 me-2 bx bx-info-circle text-primary p-2"></span>
+                                Addtional information
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="sample_date" class="fw-bold text-secondary">Sample date</label>
+                                        <input type="date"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="sample_date">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="priority" class="fw-bold text-secondary">Priority</label>
+                                        <select
+                                            class="form-select form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="priority">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="diagnosis" class="fw-bold text-secondary">Diagnosis</label>
+                                        <textarea class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="diagnosis"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="antibiotics" class="fw-bold text-secondary">Antibiotics</label>
+                                        <textarea class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="antibiotics"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="alarms" class="fw-bold text-secondary">Alarms</label>
+                                        <textarea class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="alarms"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="info" class="fw-bold text-secondary">Info</label>
+                                        <textarea class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="info"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="anamnesis" class="fw-bold text-secondary">Anamnesis</label>
+                                        <textarea class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="anamnesis"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="comment" class="fw-bold text-secondary">Comment</label>
+                                        <textarea type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="comment"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 mb-3">
+                                    <div class="form-group">
+                                        <label for="addtional_info" class="fw-bold text-secondary">Addtional
+                                            info</label>
+                                        <textarea type="text"
+                                            class="form-control shadow-none p-2 px-4 border-0 font-14 bg-light"
+                                            id="addtional_info"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 mb-3">
+                                    <div class="form-group">
+                                        <label for="attachments" class="fw-bold text-secondary">Attachments</label>
+                                        <input type="file"
+                                            class="form-control shadow-none p-2 border-0 font-14 bg-light"
+                                            id="attachments">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <hr>
+                    <form class="card bg-white shadow rounded-4 border-0 mb-4">
+                        <div class="card-header bg-transparent border-0 py-3">
+                            <h3 class="card-title font-18 fw-bold m-0 d-flex align-items-center">
+                                <span
+                                    class="bg-light rounded-circle font-20 me-2 bx bx-info-circle text-primary p-2"></span>
+                                Test requested
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="radio" name="test" value="AFP" id="afp">
+                                <label class="form-check-label" for="afp">
+                                    AFP
+                                </label>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="radio" name="test" value="Monkeypox"
+                                    id="monkeypox">
+                                <label class="form-check-label" for="monkeypox">
+                                    Monkeypox
+                                </label>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="radio" name="test" value="Measles" id="measles">
+                                <label class="form-check-label" for="Measles">
+                                    Measles
+                                </label>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="radio" name="test" value="Mumps" id="mumps">
+                                <label class="form-check-label" for="mumps">
+                                    Mumps
+                                </label>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="radio" name="test" value="Pertussis"
+                                    id="pertussis">
+                                <label class="form-check-label" for="pertussis">
+                                    Pertussis
+                                </label>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="radio" name="test" value="Robella" id="robella">
+                                <label class="form-check-label" for="robella">
+                                    Robella
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        
+            <footer class="fixed-bottom w-100 text-center p-2 border-top z-index--1" w3-include-html="components/footer.html">
+            </footer>
+        </main>
+    </div>
+
+
+    <!-- Libraries -->
+    <script src="./src/libs/jquery/jquery.min.js"></script>
+    <script src="./src/libs/popper/popper.min.js"></script>
+    <script src="./src/libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./src/libs/moment/moment.js"></script>
+
+    <script>
+
+    </script>
+
+    <!-- Page.js -->
+    <script src="./src/js/config.js"></script>
+    <script src="./src/js/utils.js"></script>
+</body>
+
+</html>

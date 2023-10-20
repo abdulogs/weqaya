@@ -1,0 +1,134 @@
+.nav-search {
+    width: auto;
+}
+
+.nav-badge {
+    padding: 5px 7px;
+    margin-left: -5px;
+    margin-top: -10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.dropdown-menu {
+
+    .card {
+        width: 400px;
+
+        .card-body {
+            height: 350px;
+        }
+    }
+}
+
+.sidebar {
+    width: 300px;
+
+    #sidebarmenu {
+        position: sticky;
+        top: 70px;
+    }
+
+    .list-group {
+
+        .list-group-item {
+            background-color: transparent;
+            border-radius: 5px;
+            margin-bottom: 3px;
+            padding: 5px 10px;
+
+            a {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                text-decoration: none;
+                color: #222;
+
+                i {
+                    margin-right: 8px;
+                    border-radius: 50px;
+                    padding: 5px;
+                    font-size: 16px;
+                    background-color: var(--bs-primary);
+                    color: white;
+                }
+
+                .bx-chevron-down {
+                    margin-left: auto;
+                }
+            }
+
+            &:hover,
+            &:focus {
+                background-color: #fefefe;
+                box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+                font-weight: bold;
+            }
+        }
+
+        .active {
+            background-color: #fefefe;
+            box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+            font-weight: bold;
+
+            a {
+                color: var(--bs-primary) !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1030px) {}
+
+@media screen and (max-width: 800px) {}
+
+
+@media screen and (max-width: 600px) {
+    .nav-search {
+        background-color: white;
+        padding: 10px;
+
+        &:focus,
+        &:hover {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+        }
+    }
+
+    .sidebar {
+        margin: 0px;
+        padding: 20px;
+        left: 0px;
+        background-color: var(--bs-light);
+        width: 100%;
+        position: fixed;
+        z-index: 999;
+        display: none;
+        height: 100%;
+    }
+
+    .sidebarActive {
+        display: block;
+    }
+
+    .dropdown-menu {
+
+        .card {
+            width: 26em !important;
+            margin-right: -50px;
+
+            .card-body {
+                height: 350px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 400px) {}
+
+@media screen and (max-width: 400px) {}
+
+@media screen and (max-width: 300px) {}
